@@ -1,0 +1,5 @@
+import os
+
+DNS_TIMEOUT_SECONDS = float(os.getenv("DNS_TIMEOUT_SECONDS", "3"))
+CACHE_DEFAULT_TTL_SECONDS = int(os.getenv("CACHE_DEFAULT_TTL_SECONDS", "60"))
+MAX_ITEMS_IN_CACHE = int(os.getenv("MAX_ITEMS_IN_CACHE", "5000"))
